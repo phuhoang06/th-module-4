@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sửa Sản Phẩm</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Sửa Sản Phẩm</h1>
+    <form id="edit-product-form">
+        <div class="form-group">
+            <label for="name">Tên sản phẩm:</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Giá bắt đầu:</label>
+            <input type="number" id="price" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="category">Loại sản phẩm:</label>
+            <select id="category" class="form-control" required>
+                <!-- Tùy chọn từ danh mục sẽ được tải động -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status">Tình trạng:</label>
+            <input type="text" id="status" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
+        <button type="button" id="cancel" class="btn btn-secondary">Hủy</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="edit-product.js"></script> <!-- Kết nối đến file JavaScript -->
+</body>
+</html>

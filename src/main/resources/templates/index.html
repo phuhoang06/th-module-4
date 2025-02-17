@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sản Phẩm Bán Đấu Giá</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Quản Lý Sản Phẩm Bán Đấu Giá</h1>
+    <form id="search-form">
+        </select>
+        <button type="button" id="clear" class="btn btn-secondary">Xóa</button>
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button type="submit">Search</button>
+    </form>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Số thứ tự</th>
+            <th>Chọn</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Giá bắt đầu</th>
+            <th>Loại sản phẩm</th>
+            <th>Tình trạng</th>
+            <th>Hành động</th>
+        </tr>
+        </thead>
+        <tbody id="product-list">
+        <!-- Hàng sản phẩm sẽ được thêm vào đây -->
+        </tbody>
+    </table>
+    <button type="button" id="delete" class="btn btn-danger">Xóa</button>
+    <button type="button" id="add" class="btn btn-success">Thêm Sản Phẩm</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
