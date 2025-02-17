@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <title>Sửa Sản Phẩm</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-container > * {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -20,19 +43,19 @@
         <div class="form-group">
             <label for="category">Loại sản phẩm:</label>
             <select id="category" class="form-control" required>
-                <!-- Tùy chọn từ danh mục sẽ được tải động -->
             </select>
         </div>
         <div class="form-group">
             <label for="status">Tình trạng:</label>
             <input type="text" id="status" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
-        <button type="button" id="cancel" class="btn btn-secondary">Hủy</button>
+        <div class="btn-container">
+            <button type="submit" class="btn btn-primary">Lưu</button>
+            <button type="button" id="cancel" class="btn btn-secondary">Hủy</button>
+        </div>
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="edit-product.js"></script> <!-- Kết nối đến file JavaScript -->
+<script src="edit-product.js"></script>
 </body>
 </html>

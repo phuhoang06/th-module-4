@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <title>Quản Lý Sản Phẩm Bán Đấu Giá</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #search-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #search-form > * {
+            margin-right: 10px;
+        }
+        #product-list {
+            text-align: center; /* Canh giữa nội dung trong bảng */
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-container > * {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <h1>Quản Lý Sản Phẩm Bán Đấu Giá</h1>
-    <form id="search-form">
-        </select>
-        <button type="button" id="clear" class="btn btn-secondary">Xóa</button>
-        <input type="text" id="search-input" placeholder="Search products...">
-        <button type="submit">Search</button>
-    </form>
-    <table class="table">
+
+    <div id="search-form">
+        <input type="text" id="search-input" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </div>
+
+    <table class="table table-bordered">
         <thead>
         <tr>
-            <th>Số thứ tự</th>
+            <th>STT</th>
             <th>Chọn</th>
             <th>Tên Sản Phẩm</th>
             <th>Giá bắt đầu</th>
@@ -27,11 +59,13 @@
         </tr>
         </thead>
         <tbody id="product-list">
-        <!-- Hàng sản phẩm sẽ được thêm vào đây -->
         </tbody>
     </table>
-    <button type="button" id="delete" class="btn btn-danger">Xóa</button>
-    <button type="button" id="add" class="btn btn-success">Thêm Sản Phẩm</button>
+
+    <div class="btn-container">
+        <button type="button" id="delete" class="btn btn-danger">Xóa</button>
+        <button type="button" id="add" class="btn btn-success">Thêm Sản Phẩm</button>
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
